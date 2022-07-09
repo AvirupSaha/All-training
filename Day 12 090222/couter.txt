@@ -1,0 +1,36 @@
+in app.component.html >>
+
+<div class="container">
+  <div>
+    <p> {{ counterService.count }}</p>
+    <button  (click)="count()" class="btn btn-default form-control increaseBtn">INCREASE</button>
+  </div>
+</div>
+
+
+for counter.service>>
+
+export class CounterService {
+count = 0;
+}
+
+
+in app.component.ts >>
+
+import { Component } from '@angular/core';
+import { CounterService } from '../common/services/counter.service';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.sass']
+})
+export class AppComponent {
+constructor(private counterService: CounterService) {}
+get count() {
+    return this.counterService
+  }
+  set count(count){
+    this.counterService.count += 1;
+  }
+}

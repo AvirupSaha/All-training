@@ -1,0 +1,72 @@
+// salary = [3504, 2342, 1234, 3425];
+// // disable = false;
+// age = '30';
+
+// showGreet = true;
+// dateVal=new Date();
+
+// title = 'angular-project';
+
+// bool = false;
+// fun() {
+//   if (this.bool) {
+//     this.bool = true;
+//   } else {
+//     this.bool = false;
+//   }
+// }
+//   function shareTemplate() {
+//     const shareBtn = document.querySelector(".shareBtn");
+//     const share = document.querySelector(".sharePic")
+
+//     shareBtn.addEventListener("click", () => {
+//         share.classList.toggle("templateActive");
+//     });
+// }
+
+// shareTemplate();
+
+// function shareTemplate1() {
+//     shareBtn1 = document.querySelector(".shareBtn1");
+//     share1 = document.querySelector(".sharePic")
+
+//     shareBtn1.addEventListener("click", () => {
+//         share1.classList.toggle("templateActive");
+//     });
+// }
+
+// shareTemplate1();
+
+
+
+<h1 *ngFor="'salary'">
+    The salaries are: {{salary}}
+</h1>
+
+<h1 *ngIf="'showGreet'">Hello! good morning</h1>
+
+<div [ngSwitch]="age">
+<h1 *ngSwitchCase="'10'">Age is 10</h1>
+<h1 *ngSwitchCase="'30'">Age is 30</h1>
+<h1 *ngSwitchCase="'60'">Age is 60</h1>
+<h1 *ngSwitchCase Default>New born</h1>
+</div>
+
+{{dateVal|date}} -->
+
+<!-- <app-nav-bar></app-nav-bar>
+<router-outlet></router-outlet>
+<app-carousel></app-carousel>
+<app-form></app-form> -->
+
+<h1>hello</h1>
+<!-- <input #input type="text" value="Sample text box">
+<button (click)="input.disabled = false" type="button">Enable</button>
+<button (click)="input.disabled = true" type="button">Disable</button> -->
+
+ // { path: 'home', component: HomeComponent },
+  // { path: '', redirectTo: 'about', pathMatch: 'full' },
+  // { path: 'about', component: AboutComponent },
+  // { path: 'contact', component: ContactComponent },
+  // { path: '**', component: FormComponent },
+

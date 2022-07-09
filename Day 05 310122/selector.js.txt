@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <p>hello</p>
+        <p id="greet">Hi</p>
+        <p id="greet">Hola</p>
+        <p id="greet">Bonjour</p>
+        <p>guten tag</p>
+        <p id="greet">salve</p>
+    </div>
+    <script src=src/index.js></script>
+</body>
+
+</html>
+
+
+
+
+var firstTarget = document.getElementById("app");
+var firstTarget = document.getElementsByClassName("greet");
+var firstTarget = document.getElementsByTagName("p");
+var firstTarget = document.querySelector(".greet");
+var firstTarget = document.querySelectorAll(".greet");
+
+var childEl = document.getElementById("greet");
+console.log(childEl.firstElementChild);
+console.log(childEl.lastElementChild);
+console.log(childEl.parentNode);
+console.log(childEl.firstChild);
+console.log(childEl.lastChild);
+console.log(childEl.previousElementSibling);
+console.log(childEl.nextElementSibling);

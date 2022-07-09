@@ -1,0 +1,46 @@
+in provide.component.ts >>
+
+ import { Injectable } from '@angular/core';
+ import { HttpClient } from '@angular/core';
+
+ @Injectable({
+  providedIn: 'root'
+})
+  export class ProvideDataService {
+  constructor(private http: HttpClient) {}
+
+   getComments() {
+     return this.http
+       .get('https://jsonplaceholder.typicode.com/users')
+       .subscribers((data) => console.log(data));
+   }
+  getData() {
+     console.log(this.http.get('https://jsonplaceholder.typicode.com/users'));
+  }
+ }
+----------------------
+
+provide-data.component.html >>
+
+<p>provide-data works!</p>
+<p>{{data}}</p>
+------------------
+in client-service.component.ts >>
+import { Component, OnInit } from '@angular/core';
+import { ProvideDataService } from '../provide-data.service';
+
+@Component({
+  selector: 'app-client-service',
+  templateUrl: './client-service.component.html',
+  styleUrls: ['./client-service.component.css'],
+})
+export class ClientServiceComponent implements OnInit {
+  data: any;
+  constructor(service: ProvideDataService) {
+    this.data = service.getComments();
+  }
+
+  ngOnInit(): void {}
+}
+------------------------
+

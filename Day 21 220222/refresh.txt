@@ -1,0 +1,10 @@
+
+onClick={()=>{dispatch({type:'WITHDRAW',amount}); resetInput();}}                                                     const resetInput=()=>{
+        setamount(0)
+    }
+
+
+OR we can  >>
+
+
+onClick={() =>{dispatch({type: 'DEPOSIT',payload:value},setvalue('')) }}

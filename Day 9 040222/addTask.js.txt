@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <h1>To DO List</h1>
+      <ul id="todo"></ul>
+      <input type="text" id="task" value="" />
+      <button type="submit" id="btn">Add Task</button>
+    </form>
+    <script src="src/index.js"></script>
+  </body>
+</html><script>function addTask() {
+  let task = document.createElement("li");
+  let taskValue = document.getElementById("task").value;
+  let todo = document.getElementById("todo");
+  task.textContent = taskValue;
+  todo.appendChild(task);
+}
+const btn = document.getElementById("btn");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  addTask();
+});</script>
+
+<style>
+* {
+  margin: 50px;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  outline: none;
+  border: none;
+}
+</style>

@@ -1,0 +1,43 @@
+in App.jsx>>
+
+import React, { useState } from 'react';
+
+const App = () => {
+    const [count, setCount] = useState({
+        count1:0,count2:7});
+
+        const handInc=()=>{
+            setCount({...count,count1:count.count1+1});
+            console.log(count.count1);
+        }
+        const handDec=()=>{
+            setCount({...count,count1:count.count1-1});
+            console.log(count.count1);
+        }
+
+   
+    return (<>
+        <h1>{count.count1}</h1>
+        <button onClick={handInc}>Counter for adding </button>
+        {/* <h1>{count.count1}</h1> */}
+        <button onClick={handDec}>Counter for deleteing </button>
+    </>)
+}
+export default App
+
+------------------------
+in index.js >>
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+const Element = () => {
+  return (
+    <>
+    
+    
+     <App/>
+    </>
+  )
+}
+ReactDOM.render(<Element />, document.getElementById('root'));

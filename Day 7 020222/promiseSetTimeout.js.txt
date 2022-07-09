@@ -1,0 +1,24 @@
+
+let statusOfMsg = true;
+let promiseMsg = Promise(function (resolve, reject) {
+    if (statusOfMsg) {
+        setTimeout(promiseMsg, 5000);
+        resolve("Success!");
+    }
+    else {
+        setTimeout(promiseMsg, 5000);
+        reject("failure! try again !");
+    }
+});
+
+let status = true;
+let promExam = new Promise(function (resolve, reject) {
+  setTimeout(() => {
+    if (status) {
+      resolve("The Promise is Fulfilled");
+    } else {
+      reject("Promise is not Fulfilled");
+    }
+  }, 4000);
+});
+console.log(promExam);

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: maroon;
+            color: white;
+            text-align: center;
+
+        }
+
+        .h3 {
+            text-align: center;
+        }
+
+        .fd2 {
+            background-color: rgb(68, 63, 63);
+            height: 100px;
+            width: 100vw;
+            color: rgb(129, 123, 123);
+        }
+
+        .fd1 {
+            background-color: black;
+        
+            color: white;
+        }
+
+        .fd3 {
+            background-color: rgb(105, 95, 95);
+            
+            color: rgb(119, 115, 115);
+        }
+
+        .flexDirect {
+            display: flex;
+            flex-direction: row;
+            height: 5%;
+            
+
+        }
+
+        .rowRev {
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+
+        .col {
+            flex-direction: column;
+
+        }
+
+        .colRev {
+            flex-direction: column-reverse;
+
+        }
+
+        .flexWrap {
+            flex-wrap: wrap;
+
+        }
+
+        .flexWrapRev {
+            flex-direction: row;
+
+        }
+
+        .noWrap {
+            flex-direction: row;
+
+        }
+
+        .flexFlow {
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+
+        .flexStart {
+            justify-content: flex-start;
+
+        }
+
+        .flexEnd {
+            justify-content: flex-end;
+
+        }
+
+        .cen {
+            justify-content: center;
+
+        }
+
+        .spcBw {
+            justify-content: space-between;
+
+        }
+
+        .spcArd {
+            justify-content: space-around;
+
+        }
+
+        .spcEv {
+            justify-content: space-evenly;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        <b>This is demonstartion of Flex Box</b>
+    </h3>
+
+    <div class="flexDirect">
+        <div class="fd1">1</div>
+        <div class="fd1">2</div>
+        <div class="fd1">3</div>
+        <div class="fd1">4</div>
+        <div class="fd1">5</div>
+    </div>
+
+    <div class="rowRev">
+        <div class="fd2">1</div>
+        <div class="fd2">2</div>
+        <div class="fd2">3</div>
+        <div class="fd2">4</div>
+        <div class="fd2">5</div>
+    </div>
+
+    <div class="col">
+        <div class="fd3">1</div>
+        <div class="fd3">2</div>
+        <div class="fd3">3</div>
+        <div class="fd3">4</div>
+        <div class="fd3">5</div>
+    </div>
+
+    <div class="colRev">
+        <div class="fd4">1</div>
+        <div class="fd4">2</div>
+        <div class="fd4">3</div>
+        <div class="fd4">4</div>
+        <div class="fd4">5</div>
+    </div>
+
+
+    <div class="flexWrap">
+        <div class="fd5">1</div>
+        <div class="fd5">2</div>
+        <div class="fd5">3</div>
+        <div class="fd5">4</div>
+        <div class="fd5">5</div>
+    </div>
+
+    <div class="flexWrapRev">
+        <div class="fd6">1</div>
+        <div class="fd6">2</div>
+        <div class="fd6">3</div>
+        <div class="fd6">4</div>
+        <div class="fd6">5</div>
+    </div>
+    <div class="noWrap">
+        <div class="fd7">1</div>
+        <div class="fd7">2</div>
+        <div class="fd7">3</div>
+        <div class="fd7">4</div>
+        <div class="fd7">5</div>
+    </div>
+    <div class="flexFlow">
+        <div class="fd8">1</div>
+        <div class="fd8">2</div>
+        <div class="fd8">3</div>
+        <div class="fd8">4</div>
+        <div class="fd8">5</div>
+    </div>
+
+    <div class="flexStart">
+        <div class="fd9">1</div>
+        <div class="fd9">2</div>
+        <div class="fd9">3</div>
+        <div class="fd9">4</div>
+        <div class="fd9">5</div>
+    </div>
+
+    <div class="flexEnd">
+        <div class="fd10">1</div>
+        <div class="fd10">2</div>
+        <div class="fd10">3</div>
+        <div class="fd10">4</div>
+        <div class="fd10">5</div>
+    </div>
+    <div class="cen">
+        <div class="fd11">1</div>
+        <div class="fd11">2</div>
+        <div class="fd11">3</div>
+        <div class="fd11">4</div>
+        <div class="fd11">5</div>
+    </div>
+    <div class="spcBw">
+        <div class="fd12">1</div>
+        <div class="fd12">2</div>
+        <div class="fd12">3</div>
+        <div class="fd12">4</div>
+        <div class="fd12">5</div>
+    </div>
+    <div class="spcArd">
+        <div class="fd13">1</div>
+        <div class="fd13">2</div>
+        <div class="fd13">3</div>
+        <div class="fd13">4</div>
+        <div class="fd13">5</div>
+    </div>
+    <div class="spcEv">
+        <div class="fd14"> 1</div>
+        <div class="fd14"> 2</div>
+        <div class="fd14"> 3</div>
+        <div class="fd14"> 4</div>
+        <div class="fd14"> 5</div>
+    </div>
+
+</body>
+
+</html>

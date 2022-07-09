@@ -1,0 +1,16 @@
+const student = {
+    firstName: "Alpha",lastName: "Corona",age: 25,marks:93
+};
+console.log("------all values using . operator-----");
+console.log(student.firstName,student.lastName,student.age,student.marks);
+console.log("---------Removed age-------");
+delete student.age;
+console.log(student);
+console.log("---------For checking status of marks-------");
+console.log("marks" in student);
+console.log("---------all properties using key-------");
+for (let key in student){
+    console.log(key);
+}
+
+

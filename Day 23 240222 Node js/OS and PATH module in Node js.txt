@@ -1,0 +1,28 @@
+//  const os=require('os');
+// const version=os.version();
+// const totalmem=os.totalmem();
+// console.log("Hello World !");
+// console.log(version);
+// console.log(totalmem);
+
+//OS MODULE EXAMPLE:
+const os=require('os');
+const version=os.version();
+const cpu=os.cpus();
+const hostname=os.hostname();
+const type=os.type();
+console.log(version);
+console.log(cpu);
+console.log(hostname);
+console.log(type);
+
+
+//PATH MODULE EXAMPLE: 
+const path=require('path');
+const pathPath=path.parse('C:/Users/AVVBKS744/IBM Training');
+const pathDir=path.dirname('C:/Users/AVVBKS744/IBM Training');
+const pathSep='C:\\Users\\AVVBKS744\\IBM Training'.split(path.sep);
+console.log(pathPath);
+console.log(pathDir);
+console.log(pathSep);
+console.log(path.extname('nodeJsExample.js'));

@@ -1,0 +1,29 @@
+prime.js >>
+
+const isPrime = (prime) => {
+    if (prime === 1) {
+        return (console.log(`${prime} is a Prime number`));
+    }
+    else if (prime === 2) {
+        return (console.log(`${prime} is a Prime number`));
+    }
+    else {
+        for (let i = 2; i < prime / 2; i++) {
+            if (prime % i === 0) {
+                return (console.log(`${prime} is not a Prime number`));
+            }
+        }
+        return (console.log(`${prime} is a Prime number`));
+    }
+
+}
+
+module.exports = isPrime;
+
+
+----------------
+calc.js >>
+
+const primeNo=require('./prime');
+const isPrime=primeNo(21);
+

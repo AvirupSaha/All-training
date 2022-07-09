@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color changing using DOM manipulation</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body id="app">
+    <button id="red">Click for Red</button>
+    <button id="green">Click for Green</button>
+    <button id="blue">Click for Blue</button>
+    <button id="reset">Click for Reset</button>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
+
+import "./styles.css";
+var red = document.getElementById("red");
+var green = document.getElementById("green");
+var blue = document.getElementById("blue");
+var white = document.getElementById("reset");
+
+var bodyEl = document.getElementById("app");
+red.addEventListener("click", function () 
+{
+  bodyEl.setAttribute("class", "redcolor");
+  green.textContent = "Click for green";
+  red.textContent = "RED IS CLICKED";
+  blue.textContent = "Click for Blue";
+});
+blue.addEventListener("click", function () {
+  bodyEl.setAttribute("class", "bluecolor");
+  green.textContent = "Click for Green";
+  red.textContent = "Click for Red";
+  blue.textContent = "BLUE IS CLICKED";
+});
+green.addEventListener("click", function () {
+  bodyEl.setAttribute("class", "greencolor");
+  Green.textContent = "GREEN IS CLICKED";
+  red.textContent = "Click for Red";
+  blue.textContent = "Click for Blue";
+});
+white.addEventListener("click", function () {
+  bodyEl.setAttribute("class", "reset");
+  green.textContent = "Click for Green";
+  red.textContent = "Click for Red";
+  blue.textContent = "Click for Blue";
+});
+
+
+

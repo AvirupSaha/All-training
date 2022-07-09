@@ -1,0 +1,100 @@
+to-dolist.component.html >>
+
+<!-- <form action="" (submit)="addTask()">
+    <input type="text" name="inputTask">
+    <button type="submit">Add Task</button>
+</form>
+ -->
+
+
+
+        <form class=" ">
+            <input type="text" name="task1" [(ngModel)]="task1">
+            <button type="submit" (click)="addTask()">+</button>
+        
+            
+            <ul *ngFor="let item of task">
+                <li>{{item.task}}<button (click)="delete(item.id)" >-</button></li>
+                
+            </ul>
+        </form>
+---------------
+to-dolist.component.ts >>
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-to-dolist',
+  templateUrl: './to-dolist.component.html',
+  styleUrls: ['./to-dolist.component.css'],
+})
+export class TodoComponent implements OnInit {
+  task:any[]=[];
+  count=0;
+  task1:string=''
+  constructor() { 
+
+  }
+  addTask(){
+
+    this.task.splice(0, 0, {task:this.task1,id:this.count});
+    this.count++;
+    console.log(this.task)
+  }
+  delete(num:number)
+  { 
+    this.task.forEach((item,index)=>{
+      if(item.id==num)
+      {
+        this.task.splice(index,1);
+      }
+    })
+  }
+  ngOnInit(): void {
+  }
+
+}
+--------------
+app.component.html>>
+
+<app-to-dolist></app-to-dolist>
+
+-------------
+app.module.ts >>
+import { NgModule } from '@angular/core';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormComponent } from './form/form.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TodoComponent } from './to-dolist/to-dolist.component';
+//import { ClientServiceComponent } from './client-service/client-service.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    NavBarComponent,
+    FormComponent,
+    CarouselComponent,
+    //ClientServiceComponent,
+    TodoComponent
+  ],
+  imports: [
+    BrowserModule,
+    //HttpClientModule,
+    AppRoutingModule,FormsModule,ReactiveFormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

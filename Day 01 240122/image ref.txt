@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title of the Page</title>
+    </head>
+    <body>
+        <a href="https://pixabay.com/photos/deer-buck-animal-winter-snow-6946129/"><img src = "deer.jpg"></a>
+    </body>
+</html>

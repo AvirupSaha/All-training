@@ -1,0 +1,496 @@
+in about:
+---------------------------
+in about.component.css >>
+
+.colImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 70vh;
+}
+----------------------
+about.component.html >>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+           <span class="colImg"> <img src="https://github.com/Avirup2812/AvirupSaha/blob/main/karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg?raw=true"
+                class="d-block w-100" alt="..."></span>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>DESCRIPTION</h5>
+                <p>Work-at-home schemes have been recorded since the early 20th century; the earliest studied "envelope
+                    stuffing" scam originated in the United States during the Great Depression in the 1920s and
+                    1930s.[2] In this scam, the worker is offered entry to a scheme where they can earn $2 for every
+                    envelope they fill. After paying a small $2 fee to join the scheme, the victim is sent a flyer
+                    template for the self-same work-from-home scheme, and instructed to post these advertisements around
+                    their local area the victim is simply "stuffing envelopes" with flyer templates that perpetuate
+                    the scheme.[2] Originally found as printed adverts in newspapers and magazines, variants of this
+                    scam have expanded into more modern media, such as television and radio adverts, and forum posts on
+                    the Internet.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+           <span class="colImg"> <img src="https://github.com/Avirup2812/AvirupSaha/blob/main/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg?raw=true"
+                class="d-block w-100" alt="..."></span>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>DETAILS</h5>
+                <p>In some countries, law enforcement agencies work to fight work-at-home schemes. In 2006, the United
+                    States Federal Trade Commission (FTC) established Project False Hopes, a federal and state law
+                    enforcement sweep that targets bogus business opportunities and work-at-home scams. The crackdown
+                    involved more than 100 law enforcement actions by the FTC, the Department of Justice, the United
+                    States Postal Inspection Service, and law enforcement agencies in eleven states.[1].</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+           <span class="colImg"> <img src="https://github.com/Avirup2812/AvirupSaha/blob/main/jefferson-santos-9SoCnyQmkzI-unsplash.jpg?raw=true"
+                class="d-block w-100" alt="..."></span>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>CONCLUSION</h5>
+                <p>Legitimate home-based business and telecommuting opportunities do exist, and many people do their
+                    jobs in the comfort of their own homes, but anyone seeking such an employment opportunity can be
+                    scammed by accepting a home employment offer. A 2007 report in the United States suggested that
+                    about 97% of work-at-home offers were scams.[3] Many legitimate jobs at home require some form of
+                    post-high-school education, such as a college degree or certificate, or trade school, and some
+                    experience in the field in an office or other supervised setting. Additionally, many legitimate
+                    at-home jobs are not like those in schemes are portrayed to be, as they are often performed at least
+                    some of the time in the company's office, require more self discipline than a traditional job, and
+                    have a higher risk of firing..</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+------------------------------------------
+in carousal:
+---------------------
+
+carousal.component.html >>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">wfh@2022.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+--------------------------------
+
+in contact :
+---------------
+
+in contact.component.css >>
+
+.formWebsite{
+display: flex;
+height: 80vh;
+width: 90vw;
+justify-content: center;
+align-items: center;
+padding-left: 10%;
+}
+--------------------------
+in contact.component.html >>
+
+<span class="formWebsite"><form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Parmanent Address">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Work address">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</span>
+
+------------------------------
+in form.component.css >>
+
+.errMsg {
+  text-align: center;
+  justify-content: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font-size: 72px;
+  color: cadetblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+-----------------------
+in form.component.html >>
+
+<div class="errMsg"> 404 Not found !</div>
+
+---------------------
+in home.component.css >>
+
+#strong{
+    color: aqua;
+}
+.homePage{
+display: flex;
+justify-content: center;
+background-color: black;
+}
+
+-----------------------
+in home.component.html >>
+
+<p class="homePage"> 
+<img src="https://github.com/Avirup2812/AvirupSaha/blob/main/photo-1481151500463-1fa2dd2d5dbe.jfif?raw=true"/>
+</p>
+
+----------------------
+in nav-bar.component.html >>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" >Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href=" " routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=" " routerLink="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=" " routerLink="/contact">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li> -->
+          
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+-----------------------
+
+in app-routing.module.ts >>
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormComponent } from './form/form.component';
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', component: FormComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
+-----------
+in app.component.css >>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+---------------------------
+
+in app.component.html >>
+
+<app-nav-bar></app-nav-bar>
+<router-outlet></router-outlet>
+<app-carousel></app-carousel>
+<app-form></app-form>
+
+---------------------
+
+in app.modules.ts >>
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormComponent } from './form/form.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { FormsModule } from '@angular/forms';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    NavBarComponent,
+    FormComponent,
+    CarouselComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+-----------------------------

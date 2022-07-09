@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 100vw;
+            height: 25%;
+            text-align: center;
+            background-color: rgb(21, 106, 117);
+            border: 5px solid rgb(201, 192, 192);
+        }
+
+        .classSelect {
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .a:hover {
+            color: chartreuse;
+
+        }
+
+        .a:active {
+            color: rgb(72, 15, 204);
+
+        }
+
+        .clickTest:focus {
+            color: rgb(255, 0, 0);
+
+        }
+
+        p:nth-child(2) {
+            color: cornsilk;
+        }
+
+
+
+        #idSelect {
+            text-align: center;
+            color: teal;
+        }
+
+        p~section {
+            color: rgb(223, 53, 67);
+        }
+
+        :hover div+p {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div> <big><em><br>CSS Selectors</em> are showcased here!</big>
+        <h3 class="classSelect">This is made using <b>CLASS SELECTORS</b> </h3>
+        <h2 id="idSelect">This is made using <b>ID SELECTORS</b></h2>
+    </div>
+
+    <div>
+        <p>Descendant Selectors</p>
+        <section>
+            <p>Matches all elements </p>
+            <p>that are Descendant of </p>
+            <p>sepcified elements</p>
+            <p>used space for that</p>
+        </section>
+    </div>
+
+
+    <div>
+        <p>Child Selectors</p>
+        <section>
+            <p>selects all elements that are childem of sepcified elements</p>
+        </section>
+    </div>
+
+    <div>
+        <p>Adjacent Sibling Selectors</p>
+        <p>+ symbol used</p>
+        <p>selects all elements that is directly after</p>
+        <p>sibling elements must have same parent</p>
+        <p></p>
+    </div>
+
+
+    <div>
+        <p>General Sibling Selectors</p>
+        <section>
+            <p>
+                tilde symbol used</p>
+            <p> selects all elements that are next siblings</p>
+        </section>
+    </div>
+
+    <div>
+        <p>Child Selectors</p>
+        <h2 class="clickTest">&nbsp<a href="https://www.w3schools.com/css/css_combinators.asp">
+                Click for child selector</a></h2>
+    </div>
+
+</body>
+
+</html>

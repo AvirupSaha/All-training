@@ -1,0 +1,8 @@
+import React from "react";//array using map
+import  ReactDOM  from "react-dom";
+const Element=()=>{
+  const newArray=[1,2,3,4,5,6,7];
+  const mapArray = newArray.map(a=>a+" ");
+  return mapArray;
+}
+ReactDOM.render(<Element/>,document.getElementById('root'));

@@ -1,0 +1,29 @@
+let arr = [10, 15, 20, 25, 30, 35, 40, 45, 50];
+let [first, second] = arr;
+console.log("This is using array destructing: ", first, second);
+
+let [one, , three, , five] = arr;
+console.log("This is using ignoring elements: ", one, three, five);
+
+const emp = { fname: "harry", lname: "potter", salary: 334566 };
+
+let { fname: firstName, lname: lastName, salary: sal } = emp;
+console.log("using alias Identifier: :", firstName, lastName, sal);
+
+const employee = { fname: "harry", lname: "potter", salary: 334566 };
+let { fname, lname, salary } = employee;
+console.log("Using default: ", fname, lname, salary);
+
+console.log("Example of rest parameter:");
+function restFx(a, b, ...args){
+    console.log(a);
+    console.log(b); 
+    console.log(args);
+}
+
+restFx("ram", "laxman", "bharat", "alpha", "beta", "gamma");
+
+
+let arrHello=["hello","hi","hola"];
+let arrayWorld=["world","planet",...arrHello,"universe"]
+console.log("Example of spread Operator: ",arrayWorld);

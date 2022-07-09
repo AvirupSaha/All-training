@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1> <b><u>CURRICULAM VITAE</u></b></h1>
+</head>
+
+<body>
+    <information>
+        <p>
+        <h3>Name:&nbspAvirup Saha</p>
+
+            Mail id:&nbsp<a href="mailto:avirupsaha28@gmail.com" p id="email">avirupsaha28@gmail.com</p>
+            </a>
+            <p>Contact:&nbsp+91 8017723531</p>
+            Linkedin profile:&nbsp<a href="https://www.linkedin.com/in/avirup-saha-935819158/" p id="linkedin">
+               https://www.linkedin.com/in/avirup-saha-935819158/
+        </p></a>
+        </h3>
+    </information>
+
+    <div class="right">
+        <h3><ul><li> OBJECTIVES</li></ul></h3>
+        <p>
+            To work in a firm with a professional work driven environment where I can utilize and apply my knowledge,
+            skills which would enable me to grow while fulfilling organizational goals. I would also love to accept opportunities where I shall get to learn and pour more into the basket of my
+            knowledge.
+        </p>
+        <h3><ul><li>EDUCATION</li></ul></h3>
+        <h4>
+            <table>
+                <tr id="heading">
+                    <td><u>Standard</u></td>
+                    <td><u>Institute Name</u></td>
+                    <td><u>Board</u></td>
+                    <td><u>Percentage</u></td>
+                    <td><u>Year</u></td>
+                </tr>
+                <h4>
+                    <tr>
+                        <td>Secondary&nbsp&nbsp</td>
+                        <td>Mahesh Sri Ramakrishna <br>Ashram Vidyalaya (H.S)&nbsp&nbsp&nbsp</td>
+                        <td>WBBSE</td>
+                        <td>&nbsp&nbsp&nbsp75.4&nbsp</td>
+                        <td>2012<br></td>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary&nbsp&nbsp</td>
+                        <td>Uttarpara Govt. High School&nbsp&nbsp&nbsp</td>
+                        <td>WBCHSE</td>
+                        <td>&nbsp&nbsp&nbsp69.6&nbsp</td>
+                        <td>2014<br></td>
+                    </tr>
+                    <tr>
+                        <td>Graduation&nbsp&nbsp</td>
+                        <td>Techno India University&nbsp&nbsp&nbsp</td>
+                        <td>Techno India University</td>
+                        <td>&nbsp&nbsp&nbsp88.2&nbsp</td>
+                        <td>2018<br></td>
+                    </tr>
+                    <tr>
+                        <td>Post Graduation&nbsp&nbsp</td>
+                        <td>Jadavpur University&nbsp&nbsp&nbsp</td>
+                        <td>Jadavpur University</td>
+                        <td>&nbsp&nbsp&nbsp75.6&nbsp</td>
+                        <td>2022<br></td>
+                    </tr>
+            </table>
+            <h3><ul><li>PROJECTS</li></ul></h3>
+            <li><b>1st Semester:</b> <i>POV wand</i></li>
+            <li><b>2nd Semester:</b> <i>Bluetooth controlled robot.</i></li>
+            <li><b>3rd Semester:</b> <i>Drawbot</i></li>
+            <li><b>4th Semester:</b> <i>RGB strip light controlling with android app</i></li>
+            <li><b>5th Semester:</b> <i>PIR sensor based project</i></li>
+            <li><b>6th Semester:</b> <i>Pick and place bot</i></li>
+            <li><b>7th Semester:</b> <i>Distance measuring device using UV sensor</i></li>
+            <li><b>Final year project:</b> <i>Study of Leakage current in MOSFET devices</i></li>
+            <li><b>Training Project:</b> <i>Home automation using speech recognition</i></li>
+
+
+
+            <h3><ul><li>ACHIEVEMENTS</li></ul></h3>
+            <ol>
+                <li>Actively participated in various sports and technical activities for college.</li>
+                <li>Worked as Coordinator in Robotics event of college techfest (Vivarta)</li>
+            </ol>
+            <br>
+            <h3><ul><li>EXPERIENCE</li></ul></h3>
+            <p>
+                Worked in <strong>Wipro Limited</strong> as an associate of <i>Digital Operations and Platforms</i>
+                under <u>HP chat process</u>
+                with teneurity of one year seven months.
+                Joining date: 15 th February 2019 and completed in 4th February
+            </p>
+            <h3><ul><li>PERSONAL DETAILS</li></ul></h3>
+            <ul>
+                <li><b>Date of Birth:</b> 28<sup>th</sup> December 1995
+                <li><b>Nationality:</b> Indian</li>
+                <li><b>Languages Known:</b> English / Hindi / Bengali/</li>
+                <li><b>Present Address:</b> AMAR VILLA, 255 Debaipukur Road.
+                    <p>Dist: Hooghly</p>
+                    <p>P.O: Hindmotor</p>
+                    Pin: 712233</li>
+            </ul>
+
+            <h3><ul><li>DECLARATION</li></ul></h3>
+            <p>
+                I hereby declare that the information furnished above is true to the best of my knowledge and I am
+                also
+                confident of my ability to work in a team.
+
+                Place: HINDMOTOR<br>
+                Date: 24.01.2022<br>
+                (Full Name)<br>
+                <b>Avirup Saha
+                </b>
+            </p>
+</body>
+
+</html>

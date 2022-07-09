@@ -1,0 +1,80 @@
+in cmd >>
+
+ng g c home 
+ng g c about
+ng g c contact
+
+---------------
+ng serve --open
+---------------
+
+ in app-routing.module.ts >>
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+const routes: Routes = [
+  { path: '',redirectTo:'home',pathMatch:"full"},{path:'home', component: HomeComponent },
+  { path: '',redirectTo:'about',pathMatch:"full"}, {path: 'about', component: AboutComponent },
+  {  path: '',redirectTo:'contact',pathMatch:"full"},{path: 'contact', component: ContactComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
+--------------------------
+
+in app.component.css >>
+
+*{
+  padding-left: 10%;
+  margin: 0;
+  box-sizing: border-box;
+}
+-------------------------
+
+in app.component.html >>
+
+<nav class="navbar">
+<a href="" routerLink="/home">Home</a>
+<a href="" routerLink="/about">About</a>
+<a href="" routerLink="/contact">Contact</a>
+
+</nav>
+<router-outlet></router-outlet>
+
+----------------
+
+in app.module.ts >>
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+------------------------

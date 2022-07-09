@@ -1,0 +1,12 @@
+
+//EXPRESS JS
+const express = require('express');
+const app = express();
+
+console.log(express);
+console.log(app);
+app.get('/', (req, res) => {
+  res.send("<h1>Hello World ok</h1>")
+});
+app.listen(4000);
+//app.listen(process.env.PORT||4000);

@@ -1,0 +1,49 @@
+
+
+
+https://www.w3schools.com/html/html_tables.asp
+
+ Table in angular :
+
+<td *ngFor = " let item of arr[0] | keyvalue"> {{ item.key }} </td>
+
+<p>Loop Through Object using KeyValue Pipe and *ngFor</p>
+  <div *ngFor="let item of object | keyvalue">
+    {{item | json }}
+    Object Key:{{item.key}} and Object Value:{{item.value}}
+  </div>
+
+Table:
+
+<ng-template ngFor let-item [ngForOf]="list">
+    <tr>
+      <td>{{ item.Company }}</td>
+      <td>{{ item.Contact }}</td>
+      <td>{{ item.Country }}</td>
+    </tr>
+  </ng-template>
+
+=>
+h1>My table</h1>
+<table id="table">
+  <thead>
+    <tr>
+      <th *ngFor="let column of head">
+        {{ column }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of body">
+      <td *ngFor="let column of head">
+        {{ row[column] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+ts for table :
+
+  <tr *ngFor= " let obj of arr ">
+      <td *ngFor = " let item of obj | keyvalue"> {{ item.value }} </td>
+    </tr>

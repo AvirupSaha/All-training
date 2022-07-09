@@ -1,0 +1,13 @@
+import React from "react";//Event handler
+import ReactDOM from "react-dom";
+const Element = () => {
+  const handleClick=()=>{
+    console.log("Hello");
+  }
+  return (
+    <>
+    <button onClick={handleClick}>Click Me</button>
+    </>
+  )
+}
+ReactDOM.render(<Element />, document.getElementById('root'));

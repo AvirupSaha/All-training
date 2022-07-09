@@ -1,0 +1,21 @@
+function checkNum(x) {
+  if (x == 0) {
+    console.log("Enter no except zero");
+  } else if (x % 2 == 1) {
+    console.log("It is ODD!");
+  } else {
+    console.log("It is EVEN!");
+  }
+}
+
+
+var checkNum2 = function (x) {
+  if (x == 0) {
+    console.log("Enter no except zero");
+  } else if (x % 2 == 1) {
+    console.log("It is ODD!");
+  } else {
+    console.log("It is EVEN!");
+  }
+};
+

@@ -1,0 +1,18 @@
+var parElem = document.getElementById("app");
+console.log("Used class attr: hello_types and id attr:hello_types_2");
+
+parElem.setAttribute("class", "hello_types");
+
+parElem.setAttribute("id", "hello_types_2");
+
+console.log(parElem.getAttribute("class"));
+console.log(parElem.getAttribute("id")); console.log("Removing class attribute hello_types");
+
+parElem.removeAttribute("class");
+console.log("Removed class attribute hello_types");
+console.log("using hasAttribute for hello_types ");
+
+console.log(parElem.hasAttribute("class"));
+console.log("using hasAttribute for hello_types_2 ");
+
+console.log(parElem.hasAttribute("id"));

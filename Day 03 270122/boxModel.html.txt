@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1><u> This is the implementation of Max width, Min width,Margin ,Padding and Border</u></h1>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            background-color: darkgrey;
+            box-sizing: border-box;
+        }
+
+        .maxWidth {
+            color: yellowgreen;
+            background-color: white;
+            max-width: 75%;
+            height: 20vh;
+
+        }
+
+        .minWidth {
+            color: rgb(235, 98, 19);
+            background-color: blueviolet;
+            min-width: 50px;
+
+        }
+
+        .margin {
+            color: rgb(104, 31, 88);
+            background-color: royalblue;
+            width: auto;
+            height: auto;
+            margin: 20px 30px 40px 50px;
+        }
+
+        .padding {
+            background-color: rgb(163, 85, 29);
+            color: darkgreen;
+            padding: 20px 30px 40px 50px;
+
+        }
+
+        .borderDesign {
+
+            font-size: 16px;
+            border: 10px solid brown;
+            border-top: double;
+            border-bottom: dashed;
+            border-radius: 50%;
+            background-color: rgb(162, 211, 206);
+            color: slateblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="maxWidth">
+        This section is for MAXWIDTH<p>max-width 300px is used here</p>
+    </div>
+
+    <div class="minWidth">
+        This section is for MINWIDTH<br>
+        min-width 50px is used here
+    </div>
+
+    <div class="margin">
+        This section is for MARGIN
+        <h4>The dimensions are 20px for top 30px for right 40px for bottom and 50px for left</h4>
+    </div>
+
+    <div class="padding">
+        This section is for PADDING
+        <h5>The dimensions are 20px for top 30px for right 40px for bottom and 50px for left</h5>
+    </div>
+
+    <div class="borderDesign">
+        <em>This section is for BORDER</em><br>
+        The dimensions are 20px for top<br> 30px for right<br> 40px for bottom<br> and 50px for left
+    </div>
+
+</body>
+
+</html>

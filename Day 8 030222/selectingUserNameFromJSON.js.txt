@@ -1,0 +1,10 @@
+let data = fetch("https://jsonplaceholder.typicode.com/users");
+
+async function func() {
+  let d = await data.then((res) => res.json());
+  d.map((item) => {
+    console.log(item["name"]);
+  });
+}
+
+func();

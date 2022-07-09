@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        width: 100vw;
+        height: 25%;
+        background-color: rgb(21, 106, 117);
+        background-position: center;
+        border: 5px solid rgb(201, 192, 192);
+      }
+
+      h1 {
+        text-align: center;
+        width: 100vw;
+        height: 50vh;
+        color: rgba(16, 16, 121, 0.5);
+        background-color: #aabbcc;
+        background-position: center;
+        font-size: 40px;
+      }
+
+      p {
+        text-align: center;
+        color: white;
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><br />Hello world !</h1>
+    <p>Welcome to IBM</p>
+  </body>
+</html>
+
+<!--https://zft99.csb.app/-->

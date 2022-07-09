@@ -1,0 +1,113 @@
+in context.js >>
+
+import { createContext, useState } from "react";
+
+export const Bankcontext = createContext();
+
+export const BankProvider = (props) => {
+  const [balance, setBalance] = useState(200);
+  const [input, setinput] = useState("");
+  const changeHandler = (val) => {
+    setinput(val === "" ? "" : parseInt(val));
+  };
+  const withdrawHandler = () => {
+    if (balance >= input) setBalance(balance - input);
+    else alert("Balance not sufficient");
+    setinput("");
+  };
+  const depositHandler = () => {
+    setBalance(balance + input);
+    setinput("");
+  };
+  const fixedHandler = () => {
+    setBalance((balance + input) * 1.03);
+    setinput("");
+  };
+  const DeleteHandler = () => {
+    setBalance(0);
+    setinput("");
+  };
+  return (
+    <Bankcontext.Provider
+      value={{
+        balance,
+        changeHandler,
+        input,
+        withdrawHandler,
+        depositHandler,
+        fixedHandler,
+        DeleteHandler
+      }}
+    >
+      {props.children}
+    </Bankcontext.Provider>
+  );
+};
+
+----------------
+in banking.js >>
+
+import { useContext } from "react";
+import { Bankcontext } from "./context";
+import React from "react";
+
+const Banking = () => {
+  const { balance } = useContext(Bankcontext);
+  const { changeHandler } = useContext(Bankcontext);
+  const { input } = useContext(Bankcontext);
+  const { withdrawHandler } = useContext(Bankcontext);
+  const { depositHandler } = useContext(Bankcontext);
+  const { fixedHandler } = useContext(Bankcontext);
+  const { DeleteHandler } = useContext(Bankcontext);
+
+  return (
+    <div>
+      <h2>{balance}</h2>
+      <input
+        type="number"
+        value={input}
+        onChange={(event) => {
+          changeHandler(event.target.value);
+        }}
+      />
+      <button onClick={withdrawHandler}>Withdraw</button>
+      <button onClick={depositHandler}>Deposit</button>
+      <button onClick={fixedHandler}>Fixed Deposit</button>
+      <button onClick={DeleteHandler}>Delete</button>
+    </div>
+  );
+};
+
+export default Banking;
+------------------------------
+in index.js >>
+
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  rootElement
+);
+
+----------------------
+in App.js >>
+
+import Banking from "./banking";
+import { BankProvider } from "./context";
+import "./styles.css";
+
+export default function App() {
+  return (
+    <BankProvider>
+      <div className="App">
+        <Banking />
+      </div>
+    </BankProvider>
+  );
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<!--https://onaircode.com/wp-content/uploads/2019/09/navigation-menus.jpg-->
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font: 18px;
+            font-weight: bold;
+            font-family: sans-serif;
+            background-color: rgb(155, 35, 35);
+        }
+
+        .navIcon {
+            background-color: rgb(41, 41, 41);
+            width: 50%;
+            height: 15vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 20%;
+            margin-top: 20%;
+        }
+
+        .navBtn {
+            background-color: rgb(41, 41, 41);
+            text-decoration: none;
+            color: rgb(233, 233, 233);
+            padding-top: 5%;
+        }
+
+        .navBtn:hover {
+            color: grey;
+        }
+
+        .red:hover {
+            color: grey;
+        }
+
+        .red {
+            color: rgb(185, 45, 45);
+            background-color: rgb(41, 41, 41);
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navIcon">
+        <a href="https://en.wikipedia.org/wiki/Logo" div class="navBtn">STYLISH
+            <div class="red">LOGO</div>
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Home" div class="navBtn">HOME</a>
+
+        <a href="https://en.wikipedia.org/wiki/Wikipedia:About" div class="navBtn">ABOUT</a>
+        <a href="https://en.wikipedia.org/wiki/Client" div class="navBtn">
+            <div class="red">CLIENT +</div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Service" div class="navBtn">SERVICES
+            <div class="red">&nbsp+</div>
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us" div class="navBtn">CONTACT</a>
+    </div>
+</body>
+
+</html>

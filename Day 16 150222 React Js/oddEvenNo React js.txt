@@ -1,0 +1,19 @@
+import React from "react";
+import  ReactDOM  from "react-dom";// functional component
+const Element=()=>{
+const OddEven=()=>{
+  let a=10;
+  
+  if (a%2==0)
+  {
+    return "Even";
+  }
+  else{
+    return "odd";
+  }
+}
+  return(
+  <><h1>The number is: {OddEven()}</h1></>
+  )
+}
+ReactDOM.render(<Element/>,document.getElementById('root'));

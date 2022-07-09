@@ -1,0 +1,7 @@
+
+{ 'background-color': status == 'error' ? 'red' : 'orange' }
+
+<h2 [ngStyle]="condition=='t'?{'background-color': 'blue'}:{'background-color': 'red'}">hello</h2>
+
+
+<div id="page"[ngClass]="i==-1?'even':'odd'" ></div>

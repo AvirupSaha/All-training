@@ -1,0 +1,26 @@
+let num = Math.floor(10 * Math.random());
+let sum = num * 2;
+let prm = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        if (sum > 15) {
+            resolve("The transaction is: Success !");
+        }
+
+        else {
+            reject("The transaction is: Failure !");
+        };
+    }, 3000);
+});
+
+
+async function fx() {
+    try {
+        let sum1 = await prm;
+        console.log(sum1);
+    } catch (exception) {
+        console.log(exception);
+    }
+}
+console.log("The random sum is:", sum);
+
+fx();

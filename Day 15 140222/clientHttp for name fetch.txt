@@ -1,0 +1,79 @@
+provide.service.ts >>
+
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ProvideService {
+
+  constructor( private http:HttpClient) 
+  {}
+  getcomments(){
+    return this.http.get('https://jsonplaceholder.typicode.com/users');}
+    getdata(){
+      return this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((data)=>console.log(data));
+    }
+}
+
+------------------------------
+app.module.ts >>
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TestComponent } from './test/test.component'
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    TestComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+--------------------
+app.component.html >>
+
+<app-test></app-test>
+----------------------
+test.component.html >>
+
+<h1>List of Users</h1>
+<ul *ngFor="let item of data">
+   {{item.name}}
+</ul>
+----------------
+test.component.ts >>
+
+import { Component, OnInit } from '@angular/core';
+import { ProvideService } from '../provide.service';
+
+@Component({
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.css']
+})
+export class TestComponent implements OnInit {
+  data:any;
+  constructor(service:ProvideService) {
+    service.getcomments().subscribe((data1)=>{
+      this.data=data1;
+    });
+    service.getdata();
+   }
+ 
+  
+  ngOnInit(): void {
+  }
+
+}
+----------------------

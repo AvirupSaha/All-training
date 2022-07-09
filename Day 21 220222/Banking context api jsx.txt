@@ -1,0 +1,159 @@
+in Action.jsx >>
+
+import React from "react";
+import { useContext, useState } from "react";
+import { BankContext } from "../BankContext";
+
+const Actions = () => {
+  const { balance, deposit, widraw, fixed, close } = useContext(BankContext);
+  const [value, setvalue] = useState("");
+
+  const handler = (event) => {
+    setvalue(Number(event.target.value));
+  };
+
+  return (
+    <div>
+      <h1 className="text-center">Your Balance is</h1>
+      <h1 className="text-center">{balance}</h1>
+
+      <div className="input-group">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="amount"
+          value={value}
+          onChange={handler}
+          aria-describedby="basic-addon2"
+        />
+        <div className="input-group-append ">
+          <button
+            className="btn btn-outline-secondary btn-success"
+            style={{ color: "white" }}
+            type="button"
+            onClick={() => {
+              deposit(value, setvalue(""));
+            }}
+          >
+            Deposit
+          </button>
+          <button
+            className="btn btn-outline-secondary btn-warning"
+            style={{ color: "white" }}
+            type="button"
+            onClick={() => {
+              widraw(value, setvalue(""));
+            }}
+          >
+            Withdraw
+          </button>
+          <button
+            className="btn btn-outline-secondary btn-success"
+            style={{ color: "white" }}
+            type="button"
+            onClick={() => {
+              fixed();
+            }}
+          >
+            Fixed Deposit
+          </button>
+          <button
+            className="btn btn-outline-secondary btn btn-danger"
+            style={{ color: "white" }}
+            type="button"
+            onClick={() => {
+              close();
+            }}
+          >
+            Close account
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Actions;
+
+------------------------
+in App.js >>
+
+import Actions from './components/Actions';
+import { BankProvider } from './BankContext';
+
+function App() {
+  return (
+
+    <BankProvider>
+      <Actions/>
+    </BankProvider>
+  );
+}
+
+export default App;
+
+----------------------
+in BankContext.jsx >>
+
+import { createContext,useState } from "react";
+
+export const BankContext=createContext();
+
+export const BankProvider=(props)=>{
+ const [balance, setbalance] = useState(0);
+
+ const deposit=(amount)=>{
+     if(amount>0)
+     setbalance(balance+amount);
+     else
+     {
+         console.warn("enter valid amount")
+     }
+ } 
+
+ const widraw=(amount)=>{
+   if(amount>0 && amount<balance)
+   {
+       setbalance(balance-amount);
+   }
+   else
+     {
+         console.warn("enter valid amount")
+     }
+ }
+
+ const fixed=()=>{
+     setbalance(balance*1.05);
+ }
+
+ const close=()=>{
+     setbalance(0);
+ }
+
+ return (
+     <BankContext.Provider value={{ balance,deposit,widraw,fixed,close }}>
+         {props.children}
+     </BankContext.Provider>
+ )
+
+}
+
+----------------
+in index.js >>
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
